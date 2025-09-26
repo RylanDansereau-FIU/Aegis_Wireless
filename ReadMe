@@ -1,0 +1,56 @@
+# Aegis Wireless
+
+## 🛡️ Secure Your Connection Before You Connect 🛡️
+
+Aegis Wireless is an innovative program designed to put network security in your hands. In today's interconnected world, jumping onto a new Wi-Fi network can be a leap of faith. Is it secure? Is it vulnerable to eavesdropping? Aegis Wireless aims to answer these critical questions *before* you expose your devices.
+
+### What is Aegis Wireless?
+
+Aegis Wireless provides a comprehensive suite of tools to assess the security posture of a target Wi-Fi network. By performing various reconnaissance and vulnerability detection methods, it helps users make informed decisions about whether to connect to a specific network. Think of it as your personal digital bodyguard, evaluating the environment and reporting back before you step in.
+
+http://googleusercontent.com/image_generation_content/0
+
+
+
+### Key Features
+
+* **Real-time Vulnerability Scanning:** Identifies common weaknesses in network configurations, such as weak encryption protocols or default credentials.
+* **Signal Integrity Check:** Detects jamming, spoofing attempts, and hidden devices that could indicate malicious activity.
+* **Device Enumeration:** Discovers and lists devices already connected to the network, providing insights into potential exposure.
+* **Security Score & Report:** Generates a comprehensive security grade and detailed report, highlighting risks and offering recommendations.
+* **Cross-Platform:** Built with portability in mind, Aegis Wireless is designed to run on various operating systems including macOS and Linux.
+
+### How it Works (Under the Hood)
+
+Aegis Wireless leverages a combination of active and passive scanning techniques:
+
+1.  **Passive Reconnaissance:** Listens for broadcasted network information without sending any packets, gathering details like SSIDs, BSSIDs, channels, and encryption types.
+2.  **Active Probing (Configurable):** For deeper analysis, it can optionally send crafted packets to test for known vulnerabilities, such as WPA2 handshake weaknesses or open ports on connected devices.
+3.  **Threat Intelligence Integration:** Compares identified network characteristics against a database of known threats and vulnerabilities to provide an accurate risk assessment.
+
+### Getting Started
+
+#### Prerequisites
+
+* Python 3.x
+* `pip` (Python package installer)
+* Network adapter capable of monitor mode (recommended for full functionality)
+
+#### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/RylanDansereau-FIU/Aegis_Wireless.git](https://github.com/RylanDansereau-FIU/Aegis_Wireless.git)
+    cd Aegis_Wireless
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+#### Usage
+
+To run a basic scan of available networks:
+
+```bash
+python aegis_wireless.py scan
